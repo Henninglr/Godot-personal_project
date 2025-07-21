@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnm34pg754ajc"]
+
+[ext_resource type="Texture2D" uid="uid://ckdq0fuv8yvj5" path="res://Backgrounds/purple.png" id="1_k36je"]
+[ext_resource type="PackedScene" uid="uid://bi0qjch42k1de" path="res://Scenes/player.tscn" id="2_3twgc"]
+[ext_resource type="PackedScene" uid="uid://cn7m2t2b6o1tp" path="res://Scenes/meteor.tscn" id="3_hn8hv"]
+
+[node name="Level" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(650, 425)
+scale = Vector2(7, 7)
+texture = ExtResource("1_k36je")
+
+[node name="Player" parent="." instance=ExtResource("2_3twgc")]
+
+[node name="Meteor" parent="." instance=ExtResource("3_hn8hv")]
+position = Vector2(176, 166)
