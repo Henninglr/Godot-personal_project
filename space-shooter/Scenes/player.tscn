@@ -5,6 +5,7 @@
 
 [node name="Player" type="Node2D"]
 script = ExtResource("1_4ttii")
+speed = 500.0
 
 [node name="PlayerImage" type="Sprite2D" parent="."]
 texture = ExtResource("1_mry1h")
