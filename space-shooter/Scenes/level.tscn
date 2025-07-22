@@ -1,8 +1,55 @@
-[gd_scene load_steps=6 format=3 uid="uid://cnm34pg754ajc"]
+[gd_scene load_steps=10 format=3 uid="uid://cnm34pg754ajc"]
 
 [ext_resource type="Script" path="res://Scenes/level.gd" id="1_8bwp5"]
 [ext_resource type="Texture2D" uid="uid://ckdq0fuv8yvj5" path="res://Backgrounds/purple.png" id="1_k36je"]
 [ext_resource type="PackedScene" uid="uid://bi0qjch42k1de" path="res://Scenes/player.tscn" id="2_3twgc"]
+[ext_resource type="Texture2D" uid="uid://b5tbn0jqpsy7r" path="res://PNG/Effects/star1.png" id="3_47vcp"]
+[ext_resource type="Texture2D" uid="uid://b3oqekpw8nc2j" path="res://PNG/Effects/star2.png" id="4_jqiah"]
+[ext_resource type="Texture2D" uid="uid://doeb5g8wnhr07" path="res://PNG/Effects/star3.png" id="5_65kox"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n0st2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_47vcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_47vcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_47vcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_47vcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jqiah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jqiah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jqiah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jqiah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_65kox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_65kox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_65kox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_65kox")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fma7o"]
 size = Vector2(50, 720)
@@ -17,6 +64,108 @@ script = ExtResource("1_8bwp5")
 position = Vector2(650, 425)
 scale = Vector2(7, 7)
 texture = ExtResource("1_k36je")
+
+[node name="Stars" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D12" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D13" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D14" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D15" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D16" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D17" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D18" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D19" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D20" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D21" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D22" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D23" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D24" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
+
+[node name="AnimatedSprite2D25" type="AnimatedSprite2D" parent="Stars"]
+sprite_frames = SubResource("SpriteFrames_n0st2")
+autoplay = "default"
 
 [node name="Player" parent="." instance=ExtResource("2_3twgc")]
 position = Vector2(1, -7)
