@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cnm34pg754ajc"]
+[gd_scene load_steps=11 format=3 uid="uid://cnm34pg754ajc"]
 
 [ext_resource type="Script" path="res://Scenes/level.gd" id="1_8bwp5"]
 [ext_resource type="Texture2D" uid="uid://ckdq0fuv8yvj5" path="res://Backgrounds/purple.png" id="1_k36je"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b5tbn0jqpsy7r" path="res://PNG/Effects/star1.png" id="3_47vcp"]
 [ext_resource type="Texture2D" uid="uid://b3oqekpw8nc2j" path="res://PNG/Effects/star2.png" id="4_jqiah"]
 [ext_resource type="Texture2D" uid="uid://doeb5g8wnhr07" path="res://PNG/Effects/star3.png" id="5_65kox"]
+[ext_resource type="PackedScene" uid="uid://cmbom41r1iua5" path="res://Scenes/ui.tscn" id="7_r8gi6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n0st2"]
 animations = [{
@@ -64,8 +65,10 @@ script = ExtResource("1_8bwp5")
 position = Vector2(650, 425)
 scale = Vector2(7, 7)
 texture = ExtResource("1_k36je")
+metadata/_edit_lock_ = true
 
 [node name="Stars" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_n0st2")
@@ -171,6 +174,7 @@ autoplay = "default"
 position = Vector2(1, -7)
 
 [node name="Borders" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Borders"]
 collision_layer = 4
@@ -204,8 +208,12 @@ shape = SubResource("RectangleShape2D_7o6kx")
 autostart = true
 
 [node name="Meteors" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="Lasers" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="UI" parent="." instance=ExtResource("7_r8gi6")]
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
